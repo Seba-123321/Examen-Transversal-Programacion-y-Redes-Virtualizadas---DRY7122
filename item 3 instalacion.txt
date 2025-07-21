@@ -1,0 +1,2 @@
+devasc@labvm:~/labs/devnet-src/security$ pip3 install pyotp
+devasc@labvm:~/labs/devnet-src/security$ pip3 install flask
