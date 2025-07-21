@@ -1,0 +1,23 @@
+Eliminar loopback por postman
+DELETE | https://192.168.56.106/restconf/data/ietf-interfaces:interfaces/interface=Loopback11
+---------------------------------------------------------------------------------------------
+Agregar loopback 22 por postman
+PUT | https://192.168.56.106/restconf/data/ietf-interfaces:interfaces/interface=Loopback22
+{
+    "ietf-interfaces:interface": {
+        "name": "Loopback22",
+        "type": "iana-if-type:softwareLoopback",
+        "enabled": false,
+        "ietf-ip:ipv4": {
+            "address": [
+                {
+                    "ip": "22.22.22.22",
+                    "netmask": "255.255.255.255"
+                }
+            ]
+        }
+    }
+}
+----------------------------------------------------------------------------------------------
+Obtener información de interfaces por postman
+GET | https://192.168.56.101/restconf/data/ietf-interfaces:interfaces
