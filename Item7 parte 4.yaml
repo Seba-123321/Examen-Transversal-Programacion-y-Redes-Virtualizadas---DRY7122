@@ -1,0 +1,17 @@
+---
+- name: Obtener show version
+  hosts: CSR1kv
+  gather_facts: false
+  connection: local
+
+  tasks: 
+   - name:  mostrar show version
+     ios_command:
+       commands:
+         - show version
+     register: config
+ 
+   - name: SAVE OUTPUT TO ./
+     copy:
+       content: "{{ config.stdout[0] }}"
+       dest: "./show_ver_{{ inventory_hostname }}.txt"
