@@ -1,0 +1,18 @@
+ssh cisco@192.168.56.105 -p 830 -s netconf
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+ <capabilities>
+   <capability>urn:ietf:params:netconf:base:1.0</capability>
+ </capabilities>
+</hello>
+]]>]]>
+
+show netconf-yang sessions
+
+
+R: Global-lock on running datastore
+C: Global-lock on candidate datastore
+S: Global-lock on startup datastore 
+Number of sessions : 1
+session-id  transport	username         	source-host       	global-lock
+-------------------------------------------------------------------------------
+27          netconf-ssh  cisco            	192.168.56.1      	None
