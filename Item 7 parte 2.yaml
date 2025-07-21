@@ -1,0 +1,17 @@
+---
+- name: Mostrar comando show ip int brief
+  hosts: CSR1kv
+  gather_facts: false
+  connection: local
+
+  tasks: 
+   - name:  crear archivo show ip int brief
+     ios_command:
+       commands:
+         - show ip interface brief
+     register: config
+ 
+   - name: SAVE OUTPUT TO ./
+     copy:
+       content: "{{ config.stdout[0] }}"
+       dest: "./show_ip_{{ inventory_hostname }}.txt"
