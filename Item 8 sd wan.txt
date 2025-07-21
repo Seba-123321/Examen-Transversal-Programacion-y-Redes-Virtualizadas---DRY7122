@@ -1,0 +1,37 @@
+Explicar cómo opera el plano de control y de datos en SD-WAN.
+Plano de Control — El que toma decisiones
+Es como el “jefe” de la red. Este plano:
+Decide cuál es el mejor camino para que viajen los datos.
+Se asegura de que todo funcione correctamente.
+Administra desde una central todos los equipos conectados.
+Reacciona ante problemas (por ejemplo, si un camino está lento o se cae, busca otro).
+Plano de Datos — El que hace el trabajo
+Es el que realmente transporta la información (como correos, llamadas, archivos):
+Envía los datos usando los caminos que el plano de control decidió.
+Puede usar distintos tipos de conexión (como Internet común o redes privadas).
+Mantiene los datos seguros mientras se mueven.
+
+
+Explicar que impulsó esta tecnología y qué evolución puede tener con la Inteligencia Artificial. 
+
+¿Por qué nació la tecnología SD-WAN?
+Antes, las empresas usaban redes tradicionales llamadas MPLS para conectar sus oficinas. Aunque eran seguras, tenían varios problemas:
+Eran carísimas.
+Se demoraban mucho en instalar o cambiar.
+No se adaptaban bien a las nuevas necesidades (como videollamadas, trabajo remoto o servicios en la nube).
+Entonces, surgió SD-WAN como una solución moderna:
+Usa Internet común (como fibra o 4G) pero de forma segura y controlada.
+Permite administrar toda la red desde un lugar central, lo que ahorra tiempo y dinero.
+Se adapta automáticamente si una conexión falla o se vuelve lenta.
+
+¿Qué papel puede jugar la Inteligencia Artificial en SD-WAN?
+La IA está empezando a darle superpoderes a SD-WAN. Mira cómo podría mejorar:
+Monitorización Inteligente
+La IA analiza todo el tráfico de red en tiempo real, detectando problemas antes de que afecten a los usuarios.
+Puede prever cuándo una conexión tendrá problemas y tomar decisiones por adelantado.
+Toma de Decisiones Más Inteligente.
+En lugar de reglas fijas, la IA puede aprender del comportamiento del tráfico y mejorar las rutas cada día.
+Se adapta incluso a patrones nuevos (por ejemplo, si los usuarios comienzan a usar una nueva aplicación en horas pico).
+Seguridad Automatizada
+Puede detectar comportamientos raros (como un intento de hackeo) y bloquearlos automáticamente.
+Aprende a distinguir entre tráfico normal y sospechoso sin necesidad de reglas escritas.
