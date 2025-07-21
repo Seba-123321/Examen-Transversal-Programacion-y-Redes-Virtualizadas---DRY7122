@@ -1,0 +1,17 @@
+---
+- name: Mostrar comando show running-config
+  hosts: CSR1kv
+  gather_facts: false
+  connection: local
+
+  tasks: 
+   - name:  Crear archivo show running-config
+     ios_command:
+       commands:
+         - show running-config  
+     register: config
+ 
+   - name: SAVE OUTPUT TO ./
+     copy:
+       content: "{{ config.stdout[0] }}"
+       dest: "./show_run_{{ inventory_hostname }}.txt"
