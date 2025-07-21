@@ -1,0 +1,7 @@
+devasc@labvm:~/labs/devnet-src/security$ curl -k -X POST -F 'username=sebastian' -F 'password=mysebastianpassword' 'https://0.0.0.0:5800/login/v1'
+devasc@labvm:~/labs/devnet-src/security$ curl -k -X POST -F 'username=mauricio' -F 'password=mymauriciopassword'  'https://0.0.0.0:5800/login/v1'
+devasc@labvm:~/labs/devnet-src/security$ curl -k -X POST -F 'username=luciano' -F 'password=mylucianopassword'  'https://0.0.0.0:5800/login/v1'
+
+devasc@labvm:~/labs/devnet-src/security$ curl -k -X POST -F 'username=sebastian' -F 'password=gonzalezpassword' 'https://0.0.0.0:5800/login/v2'
+devasc@labvm:~/labs/devnet-src/security$ curl -k -X POST -F 'username=mauricio' -F 'password=moranpassword' 'https://0.0.0.0:5800/login/v2'
+devasc@labvm:~/labs/devnet-src/security$ curl -k -X POST -F 'username=luciano' -F 'password=sanchezpassword' 'https://0.0.0.0:5800/login/v2'
